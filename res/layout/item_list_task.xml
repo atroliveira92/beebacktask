@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    
+    <LinearLayout 
+        android:layout_height="50dp"
+        android:layout_width="5dp"
+        android:background="@color/none"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:id="@+id/linearPriority"></LinearLayout>
+    
+    <CheckBox 
+        android:id="@+id/chkFinish"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/linearPriority"
+        android:focusable="false"
+        android:layout_height="wrap_content"/>
+    
+    
+    <TextView
+        android:id="@+id/txvListTitle"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_toRightOf="@id/chkFinish"
+    	android:textSize="20sp"
+    	android:textColor="@color/title_list" 
+    	android:layout_marginLeft="10dp"
+    	android:layout_marginTop="10dp"/>
+    
+    <TextView
+        android:id="@+id/txvListDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/chkFinish"
+        android:layout_below="@id/txvListTitle"
+        android:textColor="@color/date_list"
+        android:layout_marginLeft="10dp"/>
+        
+    
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/separator_list"
+    android:id="@+id/separatorListTask"
+    android:layout_below="@id/txvListDate"/>
+
+</RelativeLayout>

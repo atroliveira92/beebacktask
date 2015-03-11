@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <TextView
+        android:text="@string/login"
+        android:layout_marginTop="50dp"
+        android:textSize="25sp"
+        android:textColor="@color/login_title"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    
+    <TextView
+        android:text="@string/beeback_title"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    
+    <EditText
+        android:ellipsize="start"
+        android:id="@+id/edtLogin"
+	    android:gravity="center_horizontal"
+	    android:hint="@string/username"
+	    android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    
+    <EditText
+        android:ellipsize="start"
+        android:id="@+id/edtPassword"
+	    android:gravity="center_horizontal"
+	    android:hint="@string/password"
+	    android:inputType="textPassword"
+	    android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+        
+        
+    <Button
+        android:text="@string/entrar"
+        android:id="@+id/btnEntrarBeeback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3399FF"
+        android:textColor="#FFFFFF"
+        android:onClick="entrar"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    
+        
+    
+</LinearLayout>

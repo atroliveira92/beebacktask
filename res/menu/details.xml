@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+       <item
+	       android:id="@+id/action_remove"
+	       android:showAsAction="ifRoom"
+	       android:icon="@drawable/ic_actionbar_remove"
+	       android:title="remove"/>
+       
+       <item
+	       android:id="@+id/action_confirm"
+	       android:showAsAction="ifRoom"
+	       android:icon="@drawable/ic_actionbar_confirm"
+	       android:title="confirm"/>
+
+</menu>
